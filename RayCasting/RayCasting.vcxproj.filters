@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Основные классы">
+      <UniqueIdentifier>{396a4d56-3134-44df-929e-d9fa51a1a5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Приложения">
+      <UniqueIdentifier>{c697f567-fffa-4ac8-9c8d-6eac09bd455e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Основные классы\Реализация">
+      <UniqueIdentifier>{0a2b273a-8f78-4b0f-a248-c341f55cdf68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Вспомогательные классы">
+      <UniqueIdentifier>{a7d7bbae-5db8-4fa1-8d41-cbc178d5cde6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Тестовый функционал">
+      <UniqueIdentifier>{67388f8f-3e67-44e8-928d-9b0bb217f811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни">
+      <UniqueIdentifier>{e0bca572-bb6f-43ba-bb7a-e3abf355223a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Движок">
+      <UniqueIdentifier>{e205a350-2179-49ac-aeb0-8aeba6c09427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Сущности">
+      <UniqueIdentifier>{b83b8bb9-e207-42e5-9eb0-3703b0fe1ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Сущности\Реализация">
+      <UniqueIdentifier>{a7ad6f27-93f5-45fc-957a-b9620011ec9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни\Реализация">
+      <UniqueIdentifier>{5e9911f3-8afb-455d-a464-d2db15a89bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Движок\Реализация">
+      <UniqueIdentifier>{c0f81946-4e77-42ad-8359-9d6d7b4f3367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Приложения\Реализация">
+      <UniqueIdentifier>{640ea3c8-fd83-48f2-9304-552a3e339236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни\Части">
+      <UniqueIdentifier>{0710cca2-4bce-483f-b97f-1b0ee7e0af7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни\Части\Реализация">
+      <UniqueIdentifier>{772d0cf2-881c-413e-bae2-125eba85f279}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="AppManager.cpp">
+      <Filter>Исходные файлы\Основные классы\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Исходные файлы\Основные классы\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Исходные файлы\Основные классы\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="TestApp.cpp">
+      <Filter>Исходные файлы\Тестовый функционал</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApp.cpp">
+      <Filter>Исходные файлы\Приложения\Реализация</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApp.h">
+      <Filter>Исходные файлы\Приложения</Filter>
+    </ClInclude>
+    <ClInclude Include="AppManager.h">
+      <Filter>Исходные файлы\Основные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Исходные файлы\Основные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Исходные файлы\Основные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoFactory.h">
+      <Filter>Исходные файлы\Вспомогательные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Исходные файлы\Вспомогательные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="TestApp.h">
+      <Filter>Исходные файлы\Тестовый функционал</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractLevel.h">
+      <Filter>Исходные файлы\Уровни</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractEntity.h">
+      <Filter>Исходные файлы\Сущности</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Исходные файлы\Вспомогательные классы</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractApp.h">
+      <Filter>Исходные файлы\Приложения</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractLevelPart.h">
+      <Filter>Исходные файлы\Уровни\Части</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelRenderer.h">
+      <Filter>Исходные файлы\Движок</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLevel.h">
+      <Filter>Исходные файлы\Уровни</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMap.h">
+      <Filter>Исходные файлы\Движок</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Исходные файлы\Сущности</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCaster.h">
+      <Filter>Исходные файлы\Движок</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Исходные файлы\Уровни\Части</Filter>
+    </ClInclude>
+    <ClInclude Include="WallPolygon.h">
+      <Filter>Исходные файлы\Уровни\Части</Filter>
+    </ClInclude>
+    <ClInclude Include="WallRect.h">
+      <Filter>Исходные файлы\Уровни\Части</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
