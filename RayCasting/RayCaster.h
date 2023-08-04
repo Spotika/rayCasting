@@ -26,6 +26,9 @@ public:
 		Ray* ray;
 		sf::Vector2<int> position;
 
+		/// <summary>
+		/// Сравнивает по расстояниям объекты Intersection
+		/// </summary>
 		bool operator < (Intersection const& other) const;
 
 		/// <summary>

@@ -19,7 +19,6 @@ void MainApp::loop() {
 	AbstractLevel* level = new MainLevel();
 	Player* player = new Player();
 
-	level->addEntity(player);
 
 	LevelRenderer* renderer = new LevelRenderer(level, player);
 	MiniMap* mini_map = new MiniMap(level);
