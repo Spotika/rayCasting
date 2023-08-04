@@ -2,10 +2,11 @@
 #include "AbstractEntity.h"
 #include "IControlled.h"
 #include "IMoovable.h"
+#include "IDrawableOnMiniMap.h"
 #include "Config.h"
 
 
-class Player : public AbstractEntity, public IMoovable {
+class Player : public AbstractEntity, public IMoovable, public IDrawableOnMinimap  {
 public:
 	
 	int moving_speed = config::player::BASE_MOVING_SPEED;
@@ -28,6 +29,8 @@ public:
 	double getMovingSpeed();
 
 	double getRotatingSpeed();
+
+	void drawOnMiniMap(MiniMap* mini_map);
 
 	sf::Vector2<double> getPosition();
 };

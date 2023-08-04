@@ -21,6 +21,7 @@ void MainApp::loop() {
 	AbstractLevel* level = new MainLevel();
 	Player* player = new Player({0, 0}, 0);
 	
+
 	// подключение игрока к уровню
 	level->addEntity(player);
 
@@ -32,7 +33,7 @@ void MainApp::loop() {
 
 	// создание рендера и миникарты
 	LevelRenderer* renderer = new LevelRenderer(level, player);
-	MiniMap* mini_map = new MiniMap(level);
+	MiniMap* mini_map = new MiniMap(level, {0, 0}, 500, 350);
 
 	while (true) {
 		// обновление уровня

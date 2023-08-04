@@ -6,7 +6,8 @@
 
 
 class AbstractLevel {
-protected:
+public:
+
 	/// <summary>
 	/// Части уровня
 	/// </summary>
@@ -19,7 +20,25 @@ protected:
 	/// Список контроллеров
 	/// </summary>
 	std::vector<AbstractController*> controllers;
-public:
+
+	int width{};
+
+	int height{};
+
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <returns>Возвращает ширину уровня</returns>
+	virtual int getWidth() { throw; };
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <returns>Возвращает высоту уровня</returns>
+	virtual int getHeight() { throw; }
+
+
 	/// <summary>
 	/// обновление всех сущностей, контроллеров и самого уровня
 	/// </summary>

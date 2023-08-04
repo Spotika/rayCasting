@@ -157,6 +157,7 @@
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="AbstractEntity.h" />
     <ClInclude Include="AbstractController.h" />
+    <ClInclude Include="IDrawableOnMiniMap.h" />
     <ClInclude Include="PlayerKeyboardController.h" />
     <ClInclude Include="IMoovable.h" />
     <ClInclude Include="IControlled.h" />

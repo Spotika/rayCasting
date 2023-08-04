@@ -171,6 +171,9 @@
     <ClInclude Include="PlayerKeyboardController.h">
       <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
     </ClInclude>
+    <ClInclude Include="IDrawableOnMiniMap.h">
+      <Filter>Исходные файлы\Движок</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Model.mdj">

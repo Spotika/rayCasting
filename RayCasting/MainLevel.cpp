@@ -10,3 +10,11 @@ void MainLevel::update() {
 MainLevel::MainLevel() {
 
 }
+
+int MainLevel::getHeight() {
+	return height;
+}
+
+int MainLevel::getWidth() {
+	return width;
+}
