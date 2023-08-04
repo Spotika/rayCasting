@@ -1,14 +1,15 @@
 #pragma once
 #include "IControlled.h"
 
+
 class AbstractController {
-private:
+protected:
 	IControlled* target;
 public:
-	AbstractController(IControlled* target);
+	AbstractController(IControlled* target) : target{ target } {};
 
 	/// <summary>
 	/// обновление контроллера
 	/// </summary>
-	virtual void update();
+	virtual void update() { throw; };
 };

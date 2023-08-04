@@ -1,5 +1,7 @@
 #pragma once
 #include<string>
+#include "SFML/Graphics.hpp"
+#include <numbers>
 
 
 namespace config {
@@ -16,5 +18,44 @@ namespace config {
 		/// Описание окна
 		/// </summary>
 		static std::string title = "RayCasting";
+
+		/// <summary>
+		/// ФПС игры
+		/// </summary>
+		static const int FPS = 240;
+	}
+
+	namespace color {
+		static sf::Color black {0, 0, 0};
+	}
+
+	namespace player {
+		/// <summary>
+		/// Базовая скорость игрока
+		/// </summary>
+		static const int BASE_MOVING_SPEED = 100;
+		static const double BASE_ROTATING_SPEED = std::numbers::pi / 3;
+	}
+
+	namespace control_buttons_codes {
+		/// <summary>
+		/// Движение игрока вперед
+		/// </summary>
+		static auto player_foward = sf::Keyboard::Up;
+
+		/// <summary>
+		/// Движение игрока назад
+		/// </summary>
+		static auto player_backward = sf::Keyboard::Down;
+
+		/// <summary>
+		/// Поворот игрока по часовой стрелке
+		/// </summary>
+		static auto player_rotate_left = sf::Keyboard::Left;
+
+		/// <summary>
+		/// Воворот игрока против часовой стрелки
+		/// </summary>
+		static auto player_rotate_right = sf::Keyboard::Right;
 	}
 }

@@ -4,7 +4,7 @@
 #include <iostream>
 
 void MainLevel::update() {
-
+	AbstractLevel::update();
 }
 
 MainLevel::MainLevel() {

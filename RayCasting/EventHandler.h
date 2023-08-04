@@ -12,6 +12,16 @@ private:
 	/// </summary>
 	/// <param name="event">объект - событие</param>
 	void handleGlobalEvent(sf::Event event);
+
+	/// <summary>
+	/// время с прошлого обновления
+	/// </summary>
+	double time_elapsed = 0;
+
+	/// <summary>
+	/// Глобальные часы
+	/// </summary>
+	sf::Clock* clock = nullptr;
 public:
 	/// <summary>
 	/// Инициализация системы событий
@@ -25,4 +35,15 @@ public:
 	/// </summary>
 	/// <returns>Возвращает указатель на вектор событий</returns>
 	std::vector<sf::Event>* getEvents();
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <returns>Указатель на объект clock</returns>
+	sf::Clock* getClock();
+
+	/// <summary>
+	/// Возвращает время в секундах с прошлого обновления
+	/// </summary>
+	double getTimeElapsed();
 };

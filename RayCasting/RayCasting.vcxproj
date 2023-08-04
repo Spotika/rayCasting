@@ -145,6 +145,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="LevelRenderer.cpp" />
     <ClCompile Include="RayCaster.cpp" />
+    <ClCompile Include="PlayerKeyboardController.cpp" />
     <ClCompile Include="TestApp.cpp" />
   </ItemGroup>
   <ItemGroup>

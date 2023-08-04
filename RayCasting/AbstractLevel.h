@@ -21,9 +21,19 @@ protected:
 	std::vector<AbstractController*> controllers;
 public:
 	/// <summary>
-	/// обновление всех сущностей и самого уровня
+	/// обновление всех сущностей, контроллеров и самого уровня
 	/// </summary>
-	virtual void update() { throw; }
+	virtual void update() {
+		// обновление контроллеров
+		for (AbstractController* controller : controllers) {
+			controller->update();
+		}
+
+		// обновление сущностей
+		for (AbstractEntity* entity : entities) {
+			entity->update();
+		}
+	}
 
 	/// <summary>
 	/// добавление сущностей в уровень

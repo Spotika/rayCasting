@@ -91,6 +91,9 @@
     <ClCompile Include="RayCaster.cpp">
       <Filter>Исходные файлы\Движок\Реализация</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerKeyboardController.cpp">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Реализация</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
