@@ -1,7 +1,8 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include <vector>
-#include "AbstractLevelPart.h"
+
+class AbstractLevelPart;
 
 class RayCaster {
 public:

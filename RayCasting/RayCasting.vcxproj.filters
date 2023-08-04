@@ -20,9 +20,6 @@
     <Filter Include="Исходные файлы\Тестовый функционал">
       <UniqueIdentifier>{67388f8f-3e67-44e8-928d-9b0bb217f811}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Уровни">
-      <UniqueIdentifier>{e0bca572-bb6f-43ba-bb7a-e3abf355223a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Исходные файлы\Движок">
       <UniqueIdentifier>{e205a350-2179-49ac-aeb0-8aeba6c09427}</UniqueIdentifier>
     </Filter>
@@ -32,14 +29,26 @@
     <Filter Include="Исходные файлы\Сущности\Реализация">
       <UniqueIdentifier>{a7ad6f27-93f5-45fc-957a-b9620011ec9f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Уровни\Реализация">
-      <UniqueIdentifier>{5e9911f3-8afb-455d-a464-d2db15a89bc7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Исходные файлы\Движок\Реализация">
       <UniqueIdentifier>{c0f81946-4e77-42ad-8359-9d6d7b4f3367}</UniqueIdentifier>
     </Filter>
     <Filter Include="Исходные файлы\Приложения\Реализация">
       <UniqueIdentifier>{640ea3c8-fd83-48f2-9304-552a3e339236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Сущности\Контроллеры">
+      <UniqueIdentifier>{4b298189-d551-43b9-9069-44c2fb6a1f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Сущности\Контроллеры\Интерфейсы">
+      <UniqueIdentifier>{e80c74e7-5423-4d3e-bbb8-0734e5114f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Сущности\Контроллеры\Реализация">
+      <UniqueIdentifier>{f2b29f8d-0535-4a19-a58e-959ac50ccb3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни">
+      <UniqueIdentifier>{e0bca572-bb6f-43ba-bb7a-e3abf355223a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Уровни\Реализация">
+      <UniqueIdentifier>{5e9911f3-8afb-455d-a464-d2db15a89bc7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Исходные файлы\Уровни\Части">
       <UniqueIdentifier>{0710cca2-4bce-483f-b97f-1b0ee7e0af7f}</UniqueIdentifier>
@@ -66,6 +75,21 @@
     </ClCompile>
     <ClCompile Include="MainApp.cpp">
       <Filter>Исходные файлы\Приложения\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMap.cpp">
+      <Filter>Исходные файлы\Движок\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLevel.cpp">
+      <Filter>Исходные файлы\Уровни\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Исходные файлы\Сущности\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelRenderer.cpp">
+      <Filter>Исходные файлы\Движок\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="RayCaster.cpp">
+      <Filter>Исходные файлы\Движок\Реализация</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +155,18 @@
     </ClInclude>
     <ClInclude Include="WallRect.h">
       <Filter>Исходные файлы\Уровни\Части</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractController.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
+    </ClInclude>
+    <ClInclude Include="IControlled.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Интерфейсы</Filter>
+    </ClInclude>
+    <ClInclude Include="IMoovable.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Интерфейсы</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerKeyboardController.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
