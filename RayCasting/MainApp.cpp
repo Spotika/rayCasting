@@ -19,7 +19,7 @@ void MainApp::loop() {
 	Screen* screen = Screen::getInstance();
 
 	AbstractLevel* level = new MainLevel();
-	Player* player = new Player({123, 321}, 0);
+	Player* player = new Player({0, 0}, 0);
 	
 	// подключение игрока к уровню
 	level->addEntity(player);
