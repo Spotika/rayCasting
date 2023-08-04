@@ -20,7 +20,7 @@ void Main::start() {
 	EventHandler::getInstance()->init();
 	linkApps();
 
-	AppManager::getInstance()->addAppToQueue("TestApp");
+	AppManager::getInstance()->addAppToQueue("MainApp");
 	// старт основного цикла
 	AppManager::getInstance()->startLoop();
 

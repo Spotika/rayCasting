@@ -1,7 +1,10 @@
 #pragma once
 #include "AbstractLevel.h"
+#include "Player.h"
 
-
+/// <summary>
+/// отображает уровень на экране относительно игрока
+/// </summary>
 class LevelRenderer {
 private:
 	/// <summary>
@@ -9,10 +12,13 @@ private:
 	/// </summary>
 	AbstractLevel* level;
 
+	/// <summary>
+	/// Указатель на игрока от лица которого идет отрисовка
+	/// </summary>
+	Player* player;
 public:
 
-
-	LevelRenderer(AbstractLevel* level);
+	LevelRenderer(AbstractLevel* level, Player* player);
 
 	/// <summary>
 	/// отображает на экране изображение уровня

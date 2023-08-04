@@ -1,6 +1,6 @@
 #pragma once
 #include "SFML/Graphics.hpp"
-#include "AbstractLevel.h"
+class AbstractLevel;
 
 class MiniMap {
 private:

@@ -100,7 +100,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -140,6 +140,11 @@
     <ClCompile Include="MainApp.cpp" />
     <ClCompile Include="AppManager.cpp" />
     <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="MiniMap.cpp" />
+    <ClCompile Include="MainLevel.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="LevelRenderer.cpp" />
+    <ClCompile Include="RayCaster.cpp" />
     <ClCompile Include="TestApp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +155,10 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="AbstractEntity.h" />
+    <ClInclude Include="AbstractController.h" />
+    <ClInclude Include="PlayerKeyboardController.h" />
+    <ClInclude Include="IMoovable.h" />
+    <ClInclude Include="IControlled.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="MiniMap.h" />
     <ClInclude Include="MainLevel.h" />
