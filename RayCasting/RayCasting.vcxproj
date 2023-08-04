@@ -165,6 +165,9 @@
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="TestApp.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Model.mdj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

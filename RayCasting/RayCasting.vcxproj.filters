@@ -133,4 +133,9 @@
       <Filter>Исходные файлы\Уровни\Части</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Model.mdj">
+      <Filter>Исходные файлы</Filter>
+    </None>
+  </ItemGroup>
 </Project>
