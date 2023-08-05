@@ -8,44 +8,44 @@
 class IMoovable : public IControlled {
 public:
 
-	virtual double getMovingSpeed() { throw; };
+	virtual float getMovingSpeed() { throw; };
 
-	virtual double getRotatingSpeed() { throw; };
+	virtual float getRotatingSpeed() { throw; };
 
 	/// <summary>
 	/// Перемещение в точку target_pos
 	/// </summary>
 	/// <param name="target_pos">Целевая точка</param>
-	virtual void moveTo(sf::Vector2<double> target_pos) { throw; };
+	virtual void moveTo(sf::Vector2f target_pos) { throw; };
 
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <returns>Возвращает позицию</returns>
-	virtual sf::Vector2<double> getPosition() { throw; };
+	virtual sf::Vector2f getPosition() { throw; };
 
 
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <returns>Возвращает угол поворота</returns>
-	virtual double getOrientation() { throw; };
+	virtual float getOrientation() { throw; };
 
 	/// <summary>
 	/// перемещение на diff_pos
 	/// </summary>
 	/// <param name="diff_pos"></param>
-	virtual void move(sf::Vector2<double> diff_pos) { throw; };
+	virtual void move(sf::Vector2f diff_pos) { throw; };
 
 	/// <summary>
 	/// Поворачивает на orientation_diff
 	/// </summary>
 	/// <param name="orientation_diff">Угол поворота в радианах</param>
-	virtual void rotate(double orientation_diff) { throw; }
+	virtual void rotate(float orientation_diff) { throw; }
 
 	/// <summary>
 	/// Устанавливает поворот orientation
 	/// </summary>
 	/// <param name="orientation">Угол поворота в радианах</param
-	virtual void rotateTo(double orientation) { throw; }
+	virtual void rotateTo(float orientation) { throw; }
 };

@@ -10,16 +10,16 @@ using namespace config::control_buttons_codes;
 void PlayerKeyboardController::update() {
 	EventHandler* event_handler = EventHandler::getInstance();
 
-	double dt = event_handler->getTimeElapsed();
+	float dt = event_handler->getTimeElapsed();
 	IMoovable* player = (IMoovable*) target;
 
 
 	// логика перемещения
-	sf::Vector2<double> total_moving{0, 0};
-	double teta = player->getOrientation();
-	double total_rotation = 0;
+	sf::Vector2f total_moving{0, 0};
+	float teta = player->getOrientation();
+	float total_rotation = 0;
 
-	double mod = dt * player->getMovingSpeed();
+	float mod = dt * player->getMovingSpeed();
 
 	if (sf::Keyboard::isKeyPressed(player_foward)) {
 		total_moving.x += mod * std::cos(teta);

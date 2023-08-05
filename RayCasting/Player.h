@@ -10,27 +10,27 @@ class Player : public AbstractEntity, public IMoovable, public IDrawableOnMinima
 public:
 	
 	int moving_speed = config::player::BASE_MOVING_SPEED;
-	double rotating_speed = config::player::BASE_ROTATING_SPEED;
+	float rotating_speed = config::player::BASE_ROTATING_SPEED;
 
-	Player(sf::Vector2<double> positon, double orientation) : AbstractEntity{ positon, orientation } {};
+	Player(sf::Vector2f positon, float orientation) : AbstractEntity{ positon, orientation } {};
 
 	void update();
 
-	void moveTo(sf::Vector2<double> target_pos);
+	void moveTo(sf::Vector2f target_pos);
 
-	void move(sf::Vector2<double> diff_pos);
+	void move(sf::Vector2f diff_pos);
 
-	void rotate(double orientation_diff);
+	void rotate(float orientation_diff);
 
-	void rotateTo(double orientation);
+	void rotateTo(float orientation);
 
-	double getOrientation();
+	float getOrientation();
 
-	double getMovingSpeed();
+	float getMovingSpeed();
 
-	double getRotatingSpeed();
+	float getRotatingSpeed();
 
 	void drawOnMiniMap(MiniMap* mini_map);
 
-	sf::Vector2<double> getPosition();
+	sf::Vector2f getPosition();
 };

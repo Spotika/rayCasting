@@ -147,6 +147,8 @@
     <ClCompile Include="RayCaster.cpp" />
     <ClCompile Include="PlayerKeyboardController.cpp" />
     <ClCompile Include="TestApp.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="WallPolygon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractApp.h" />

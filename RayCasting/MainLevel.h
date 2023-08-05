@@ -3,8 +3,8 @@
 
 class MainLevel : public AbstractLevel {
 public:
-	int width = 500;
-	int height = 500;
+	int width;
+	int height;
 
 	MainLevel();
 

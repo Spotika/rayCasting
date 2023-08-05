@@ -18,7 +18,7 @@ public:
 		/// <summary>
 		/// Угол повогота в радианах относительно востока
 		/// </summary>
-		double orientation;
+		float orientation;
 	};
 
 	class Intersection {
@@ -35,7 +35,7 @@ public:
 		/// 
 		/// </summary>
 		/// <returns>Возвращает дистанцию между точкой пересечения и началом луча</returns>
-		double getDistance() const;
+		float getDistance() const;
 	};
 
 	/// <summary>
@@ -45,7 +45,7 @@ public:
 	/// <param name="num_of_rays">Количество лучей</param>
 	/// <param name="orientation">Направление ценрального луча: угол в радианах относительно востока</param>
 	/// <param name="fov">Угол распростронения лучей относительно orientation</param>
-	void cast(sf::Vector2<int> start_point, int num_of_rays, double orientation, double fov);
+	void cast(sf::Vector2<int> start_point, int num_of_rays, float orientation, float fov);
 
 	/// <summary>
 	/// Получает пересечения с объектами

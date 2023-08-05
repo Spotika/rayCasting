@@ -30,14 +30,16 @@ namespace config {
 		static const sf::Color white {255, 255, 255};
 		static const sf::Color grey {100, 100, 100};
 		static const sf::Color green {0, 255, 0};
+		static const sf::Color dark_grey {40, 40, 40};
+		static const sf::Color dark_green {0, 100, 0};
 	}
 
 	namespace player {
 		/// <summary>
 		/// Базовая скорость игрока
 		/// </summary>
-		static const int BASE_MOVING_SPEED = 400;
-		static const double BASE_ROTATING_SPEED = std::numbers::pi;
+		static const int BASE_MOVING_SPEED = 100;
+		static const float BASE_ROTATING_SPEED = std::numbers::pi * 1.5;
 	}
 
 	namespace control_buttons_codes {

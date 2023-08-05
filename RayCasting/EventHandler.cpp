@@ -37,6 +37,6 @@ sf::Clock* EventHandler::getClock() {
 	return clock;
 }
 
-double EventHandler::getTimeElapsed() {
+float EventHandler::getTimeElapsed() {
 	return time_elapsed;
 }

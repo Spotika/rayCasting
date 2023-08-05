@@ -1,7 +1,7 @@
 #include "RayCaster.h"
 
 
-void RayCaster::cast(sf::Vector2<int> start_point, int num_of_rays, double orientation, double fov) {
+void RayCaster::cast(sf::Vector2<int> start_point, int num_of_rays, float orientation, float fov) {
 
 }
 
@@ -16,7 +16,7 @@ bool RayCaster::Intersection::operator<(Intersection const& other) const {
 	return false;
 }
 
-double RayCaster::Intersection::getDistance() const {
+float RayCaster::Intersection::getDistance() const {
 	// FIXME
 	return 0;
 }

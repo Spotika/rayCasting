@@ -21,7 +21,7 @@ MiniMap::MiniMap(AbstractLevel* level, sf::Vector2<int> position, int width, int
 }
 
 void MiniMap::show() {
-	render_texture->clear(config::color::grey);
+	render_texture->clear(config::color::dark_grey);
 
 	// отрисовка сущностей
 	for (AbstractEntity* entity : level->entities) {
@@ -33,7 +33,15 @@ void MiniMap::show() {
 		}
 	}
 
-	// Отрисовка объектов TODO
+	// Отрисовка объектов 
+	for (AbstractLevelPart* part : level->level_parts) {
+		IDrawableOnMinimap* drawable = dynamic_cast<IDrawableOnMinimap*> (part);
+
+		if (drawable != nullptr) {
+			drawable->drawOnMiniMap(this);
+		}
+	}
+
 
 	// отрисовка миникарты на экране
 	sf::Sprite* to_blit = new sf::Sprite(render_texture->getTexture());
@@ -41,11 +49,11 @@ void MiniMap::show() {
 	Screen::getInstance()->getRenderWindow()->draw(*to_blit);
 }
 
-sf::Vector2<double> MiniMap::getRealativePosition(sf::Vector2<double> pos) {
-	sf::Vector2<double> res{0, 0};
+sf::Vector2f MiniMap::getRealativePosition(sf::Vector2f pos) {
+	sf::Vector2f res{0, 0};
 
-	res.x = ((double)width / level->getWidth()) * pos.x;
-	res.y = ((double)height / level->getHeight()) * pos.y;
+	res.x = ((float)width / level->getWidth()) * pos.x;
+	res.y = ((float)height / level->getHeight()) * pos.y;
 
 	return res;
 }

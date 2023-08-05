@@ -35,7 +35,7 @@ public:
 	/// </summary>
 	void show();
 
-	sf::Vector2<double> getRealativePosition(sf::Vector2<double> pos);
+	sf::Vector2f getRealativePosition(sf::Vector2f pos);
 
 	sf::RenderTexture* getRenderTexture();
 };

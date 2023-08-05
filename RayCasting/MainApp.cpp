@@ -33,7 +33,7 @@ void MainApp::loop() {
 
 	// создание рендера и миникарты
 	LevelRenderer* renderer = new LevelRenderer(level, player);
-	MiniMap* mini_map = new MiniMap(level, {0, 0}, 500, 350);
+	MiniMap* mini_map = new MiniMap(level, {0, 0}, 300, 300);
 
 	while (true) {
 		// обновление уровня

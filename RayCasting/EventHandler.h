@@ -16,7 +16,7 @@ private:
 	/// <summary>
 	/// врем€ с прошлого обновлени€
 	/// </summary>
-	double time_elapsed = 0;
+	float time_elapsed = 0;
 
 	/// <summary>
 	/// √лобальные часы
@@ -45,5 +45,5 @@ public:
 	/// <summary>
 	/// ¬озвращает врем€ в секундах с прошлого обновлени€
 	/// </summary>
-	double getTimeElapsed();
+	float getTimeElapsed();
 };

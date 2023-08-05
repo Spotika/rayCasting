@@ -94,6 +94,12 @@
     <ClCompile Include="PlayerKeyboardController.cpp">
       <Filter>Исходные файлы\Сущности\Контроллеры\Реализация</Filter>
     </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Исходные файлы\Уровни\Части\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="WallPolygon.cpp">
+      <Filter>Исходные файлы\Уровни\Части\Реализация</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
