@@ -53,7 +53,7 @@ std::vector<RayCaster::Intersection*> RayCaster::getInstersections(std::vector<A
 }
 
 RayCaster::Intersection* RayCaster::getRayLineIntersection(sf::Vector2f first_point, sf::Vector2f second_point, Ray* ray) {
-	float EPS = 1e-5;
+	float EPS = 1e-3;
 	
 	float (*det)(float a, float b, float c, float d) = [](float a, float b, float c, float d) {
 		return a * d - b * c;

@@ -6,7 +6,7 @@
 
 class EventHandler : public Singleton<EventHandler> {
 private:
-	std::vector<sf::Event> *event_list = nullptr;
+	std::vector<sf::Event>* event_list = nullptr;
 	/// <summary>
 	/// Отслеживание глобальных событий
 	/// </summary>
@@ -23,6 +23,13 @@ private:
 	/// </summary>
 	sf::Clock* clock = nullptr;
 public:
+
+	struct Global {
+		bool mouse_fixed = true;
+	};
+
+	Global* global = nullptr;
+
 	/// <summary>
 	/// Инициализация системы событий
 	/// </summary>

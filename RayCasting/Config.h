@@ -39,6 +39,10 @@ namespace config {
 		/// Базовая скорость игрока
 		/// </summary>
 		static const int BASE_MOVING_SPEED = 100;
+		/// <summary>
+		/// Чувствительность поворота камеры
+		/// </summary>
+		static float rotate_sense = 0.001f;
 		static const float BASE_ROTATING_SPEED = std::numbers::pi * 1.5;
 
 	}
@@ -57,21 +61,38 @@ namespace config {
 		/// <summary>
 		/// Движение игрока вперед
 		/// </summary>
-		static auto player_foward = sf::Keyboard::Up;
+		static auto player_foward = sf::Keyboard::W;
 
 		/// <summary>
 		/// Движение игрока назад
 		/// </summary>
-		static auto player_backward = sf::Keyboard::Down;
+		static auto player_backward = sf::Keyboard::S;
 
 		/// <summary>
-		/// Поворот игрока по часовой стрелке
+		/// Движение игрока влево
 		/// </summary>
-		static auto player_rotate_left = sf::Keyboard::Left;
+		static auto player_left = sf::Keyboard::A;
 
 		/// <summary>
-		/// Воворот игрока против часовой стрелки
+		/// Движение игрока вправо
 		/// </summary>
-		static auto player_rotate_right = sf::Keyboard::Right;
+		static auto player_right = sf::Keyboard::D;
+
+		/// <summary>
+		/// кнопка выхода
+		/// </summary>
+		static auto exit_button = sf::Keyboard::Escape;
+
+		static auto fix_mouse = sf::Keyboard::LControl;
+
+		///// <summary>
+		///// Поворот игрока по часовой стрелке
+		///// </summary>
+		//static auto player_rotate_left = sf::Keyboard::Left;
+
+		///// <summary>
+		///// Воворот игрока против часовой стрелки
+		///// </summary>
+		//static auto player_rotate_right = sf::Keyboard::Right;
 	}
 }
