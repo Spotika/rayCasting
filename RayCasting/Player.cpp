@@ -51,6 +51,7 @@ float Player::getMovingSpeed() {
 	return moving_speed;
 }
 
+
 void Player::drawOnMiniMap(MiniMap* mini_map) {
 	// игрок представляет собой круг и линию , смотрящую по направлению взгляда
 	
@@ -77,5 +78,4 @@ void Player::drawOnMiniMap(MiniMap* mini_map) {
 
 	render_texture->draw(shape);
 	render_texture->draw(line, 2, sf::Lines);
-
 };

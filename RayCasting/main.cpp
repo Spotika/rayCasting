@@ -5,6 +5,7 @@
 #include "MainApp.h"
 #include "MonoFactory.h"
 #include "EventHandler.h"
+#include <iomanip>
 #include "TestApp.h"
 
 void Main::linkApps() {
@@ -16,6 +17,8 @@ void Main::linkApps() {
 }
 
 void Main::start() {
+	std::cout << std::fixed << std::setprecision(4);
+
 	Screen::getInstance()->init();
 	EventHandler::getInstance()->init();
 	linkApps();

@@ -41,7 +41,7 @@ void PlayerKeyboardController::update() {
 	player->move(total_moving);
 	player->rotate(total_rotation);
 
-	std::cout << player->getPosition().x << " " << player->getPosition().y
-		<< " | " << player->getOrientation() <<  "\n";
+	//std::cout << player->getposition().x << " " << player->getposition().y
+	//	<< " | " << player->getorientation() <<  "\n";
 
 }

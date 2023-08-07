@@ -39,6 +39,7 @@ void MainApp::loop() {
 		// обновление уровня
 		level->update();
 
+		// FIXME
 		// отрисовка уровня
 		renderer->render();
 		// отрисовка миникарты

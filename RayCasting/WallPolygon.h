@@ -16,6 +16,6 @@ namespace part {
 		WallPolygon(std::vector<sf::Vector2f> points);
 
 		void drawOnMiniMap(MiniMap* mini_map);
-		RayCaster::Intersection getIntersection(RayCaster::Ray* ray);
+		RayCaster::Intersection* getIntersection(RayCaster::Ray* ray);
 	};
 }

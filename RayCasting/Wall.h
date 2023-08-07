@@ -12,6 +12,6 @@ namespace part {
 
 
 		void drawOnMiniMap(MiniMap* mini_map);
-		RayCaster::Intersection getIntersection(RayCaster::Ray* ray);
+		RayCaster::Intersection* getIntersection(RayCaster::Ray* ray);
 	};
 }

@@ -9,6 +9,6 @@ void part::Wall::drawOnMiniMap(MiniMap* mini_map) {
 	part::WallPolygon::drawOnMiniMap(mini_map);
 }
 
-RayCaster::Intersection part::Wall::getIntersection(RayCaster::Ray* ray) {
+RayCaster::Intersection* part::Wall::getIntersection(RayCaster::Ray* ray) {
 	return part::WallPolygon::getIntersection(ray);
 }

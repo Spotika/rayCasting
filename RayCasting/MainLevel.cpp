@@ -11,12 +11,17 @@ void MainLevel::update() {
 MainLevel::MainLevel() {
 	// инициализация уровня
 	level_parts = {
-		new part::WallPolygon({{10, 10}, {10, 100}, {100, 100}, {100, 10}}),
-		new part::Wall({10, 10}, {100, 100}),
+		new part::WallPolygon({
+			{50, 50},
+			{50, 100},
+			{100, 100},
+			{100, 50},
+			{200, 200},
+			}),
 	};
 
-	width = 200;
-	height = 200;
+	width = 500;
+	height = 500;
 }
 
 int MainLevel::getHeight() {

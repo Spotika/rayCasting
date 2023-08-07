@@ -47,6 +47,7 @@ void MiniMap::show() {
 	sf::Sprite* to_blit = new sf::Sprite(render_texture->getTexture());
 	to_blit->setPosition(position.x, position.y);
 	Screen::getInstance()->getRenderWindow()->draw(*to_blit);
+	delete to_blit;
 }
 
 sf::Vector2f MiniMap::getRealativePosition(sf::Vector2f pos) {

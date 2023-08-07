@@ -40,6 +40,13 @@ namespace config {
 		/// </summary>
 		static const int BASE_MOVING_SPEED = 100;
 		static const float BASE_ROTATING_SPEED = std::numbers::pi * 1.5;
+
+	}
+
+	namespace render {
+		static const float FOV = std::numbers::pi / 2;
+		static const float VIEW_DISTANCE = 200;
+		static const float RAYS_NUM = 500;
 	}
 
 	namespace control_buttons_codes {

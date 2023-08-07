@@ -12,4 +12,6 @@ public:
 	/// </summary>
 	/// <param name="mini_map">указатель на миникарту</param>
 	virtual void drawOnMiniMap(MiniMap* mini_map) { throw; };
+
+	virtual void initDrawing() { throw; };
 };
