@@ -24,22 +24,35 @@ void LevelRenderer::render() {
 
 		float dist = intersection->getDistance();
 
-		// ограничение проресовки
+
+
+		// ограничение прорисовки
 		if (dist < config::render::VIEW_DISTANCE) {
 
-			// отрисовка
-			float k = (1 - (dist / config::render::VIEW_DISTANCE));
+			dist = dist * std::cos(intersection->ray.orientation - player->getOrientation());
 
-			sf::RectangleShape shape({ step, config::window::height * k});
-			int x = ceil(200 * k);
-			shape.setPosition({ step * intersection->ray.num, (config::window::height - shape.getSize().y)/2.0f });
-			shape.setFillColor({ sf::Uint8(x), sf::Uint8(x), sf::Uint8(x) }); // FIXME
+			// отрисовка
+			float x = step * intersection->ray.num;
+			float height = config::render::MAGIC_CONSTANT / dist;
+			float y = config::window::height / 2 - height / 2;
+
+
+
+			sf::RectangleShape shape({step, height});
+			shape.setPosition({ x, y });
+
+
+			// работа с цветом
+			uint8_t color = 255 - (int)ceil(255 * (dist / config::render::VIEW_DISTANCE));
+
+			shape.setFillColor({ color, color, color });
 		
-			window->draw(shape);
+			window->draw(shape);			
 		}
-			
+
+		
+
 		// удаление ненужной памяти 
 		delete intersection;
 	};
-	std::cout << "\n";
 }

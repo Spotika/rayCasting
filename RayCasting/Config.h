@@ -44,9 +44,13 @@ namespace config {
 	}
 
 	namespace render {
-		static const float FOV = std::numbers::pi / 2;
+		static const float FOV = std::numbers::pi * 0.6F;
 		static const float VIEW_DISTANCE = 200;
-		static const float RAYS_NUM = 500;
+		static const float RAYS_NUM = 800;
+		/// <summary>
+		/// штука полученная эксперементально
+		/// </summary>
+		static const float MAGIC_CONSTANT = 10000;
 	}
 
 	namespace control_buttons_codes {
