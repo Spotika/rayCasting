@@ -145,7 +145,10 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="LevelRenderer.cpp" />
     <ClCompile Include="RayCaster.cpp" />
+    <ClCompile Include="PlayerKeyboardController.cpp" />
     <ClCompile Include="TestApp.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="WallPolygon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractApp.h" />
@@ -156,6 +159,7 @@
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="AbstractEntity.h" />
     <ClInclude Include="AbstractController.h" />
+    <ClInclude Include="IDrawableOnMiniMap.h" />
     <ClInclude Include="PlayerKeyboardController.h" />
     <ClInclude Include="IMoovable.h" />
     <ClInclude Include="IControlled.h" />

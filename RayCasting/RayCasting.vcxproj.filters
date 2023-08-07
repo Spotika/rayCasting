@@ -91,6 +91,15 @@
     <ClCompile Include="RayCaster.cpp">
       <Filter>Исходные файлы\Движок\Реализация</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerKeyboardController.cpp">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Исходные файлы\Уровни\Части\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="WallPolygon.cpp">
+      <Filter>Исходные файлы\Уровни\Части\Реализация</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -167,6 +176,9 @@
     </ClInclude>
     <ClInclude Include="PlayerKeyboardController.h">
       <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawableOnMiniMap.h">
+      <Filter>Исходные файлы\Движок</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

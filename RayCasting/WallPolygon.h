@@ -1,16 +1,21 @@
 #pragma once
 #include "AbstractLevelPart.h"
-#include "Wall.h"
 #include <vector>
+#include "IDrawableOnMiniMap.h"
+
 
 namespace part {
-	class WallPolygon : public AbstractLevelPart {
-	public:
-		std::vector<Wall*> walls;
 
-		WallPolygon(std::vector<sf::Vector2<int>> points);
+	/// <summary>
+	/// Полигон стен
+	/// </summary>
+	class WallPolygon : public AbstractLevelPart, public IDrawableOnMinimap {
+	public:
+		std::vector<sf::Vertex> points;
+
+		WallPolygon(std::vector<sf::Vector2f> points);
 
 		void drawOnMiniMap(MiniMap* mini_map);
-		RayCaster::Intersection getIntersection(RayCaster::Ray* ray);
+		RayCaster::Intersection* getIntersection(RayCaster::Ray* ray);
 	};
 }

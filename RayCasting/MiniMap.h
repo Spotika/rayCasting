@@ -7,7 +7,7 @@ private:
 	/// <summary>
 	/// поверхность на которой происходит отрисовка объектов
 	/// </summary>
-	sf::RenderTexture render_texture;
+	sf::RenderTexture* render_texture = nullptr;
 	/// <summary>
 	/// ”казатель на уровень, который отображает миникарта
 	/// </summary>
@@ -17,15 +17,25 @@ public:
 	/// ѕозици€ левого верхнего угла миникарты
 	/// </summary>
 	sf::Vector2<int> position;
-	/// <summary>
-	/// размеры миникарты: шириа, высота
-	/// </summary>
-	sf::Vector2<int> dims;
 
-	MiniMap(AbstractLevel* level);
+	/// <summary>
+	/// Ўирина миникарты
+	/// </summary>
+	int width;
+
+	/// <summary>
+	/// ¬ысота миникарты
+	/// </summary>
+	int height;
+
+	MiniMap(AbstractLevel* level, sf::Vector2<int> position, int width, int height);
 
 	/// <summary>
 	/// обновление и перересовка миникарты на экран
 	/// </summary>
 	void show();
+
+	sf::Vector2f getRealativePosition(sf::Vector2f pos);
+
+	sf::RenderTexture* getRenderTexture();
 };

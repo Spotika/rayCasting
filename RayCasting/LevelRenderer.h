@@ -1,6 +1,7 @@
 #pragma once
 #include "AbstractLevel.h"
 #include "Player.h"
+#include "RayCaster.h"
 
 /// <summary>
 /// отображает уровень на экране относительно игрока
@@ -11,6 +12,8 @@ private:
 	/// ”казатель на объект уровн€
 	/// </summary>
 	AbstractLevel* level;
+
+	RayCaster* ray_caster;
 
 	/// <summary>
 	/// ”казатель на игрока от лица которого идет отрисовка
@@ -24,4 +27,8 @@ public:
 	/// отображает на экране изображение уровн€
 	/// </summary>
 	void render();
+
+	~LevelRenderer() {
+		delete ray_caster;
+	}
 };
