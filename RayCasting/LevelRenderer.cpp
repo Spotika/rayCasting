@@ -31,6 +31,11 @@ void LevelRenderer::render() {
 
 	// отрисовка стен
 	float step = config::window::width / config::render::RAYS_NUM;
+	sf::Texture wall_texture;
+	if (!wall_texture.loadFromFile(config::textures::WALL)) {
+		throw;
+	}
+
 	for (RayCaster::Intersection* intersection : intersections) {
 
 		float dist = intersection->getDistance();
@@ -50,6 +55,8 @@ void LevelRenderer::render() {
 
 
 			sf::RectangleShape shape({step, height});
+			shape.setTextureRect(sf::IntRect((int)ceil(step) * intersection->ray.num % wall_texture.getSize().x, 0, (int)ceil(step), wall_texture.getSize().y));
+			shape.setTexture(&wall_texture);
 			shape.setPosition({ x, y });
 
 			// работа с цветом

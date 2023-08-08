@@ -44,7 +44,6 @@ namespace config {
 		/// </summary>
 		static float rotate_sense = 0.001f;
 		static const float BASE_ROTATING_SPEED = std::numbers::pi * 1.5;
-
 	}
 
 	namespace render {
@@ -120,5 +119,9 @@ namespace config {
 		///// ¬оворот игрока против часовой стрелки
 		///// </summary>
 		//static auto player_rotate_right = sf::Keyboard::Right;
+	}
+
+	namespace textures {
+		static const std::string WALL = "textures/wall.jpg";
 	}
 }
