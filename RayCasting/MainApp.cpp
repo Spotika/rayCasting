@@ -52,6 +52,7 @@ void MainApp::loop() {
 		// отрисовка миникарты
 		mini_map->show();
 
+
 		// обновление дисплея и событий
 		event_handler->update();
 

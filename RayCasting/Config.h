@@ -49,7 +49,7 @@ namespace config {
 
 	namespace render {
 		static const float FOV = std::numbers::pi * 0.6F;
-		static const float VIEW_DISTANCE = 200;
+		static const float VIEW_DISTANCE = 500;
 		static const float RAYS_NUM = 800;
 		/// <summary>
 		/// штука полученная эксперементально
@@ -60,10 +60,16 @@ namespace config {
 	namespace mini_map {
 		static const float RESIZE_SPEED = 0.3f;
 		static const sf::Vector2i POSITION{0, 0};
-		static const sf::Vector2i SIZE{300, 300};
+		static const sf::Vector2i SIZE{200, 200};
 		static int size{ 300 };
 	}
 
+	namespace game {
+		const sf::Color WALL_COLOR{229, 230, 25};
+		const sf::Color FLOOR_COLOR{100, 100, 100};
+		const sf::Color SKY_COLOR{172, 221, 237};
+	}
+	
 	namespace control_buttons_codes {
 		/// <summary>
 		/// Движение игрока вперед
