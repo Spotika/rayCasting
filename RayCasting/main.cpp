@@ -21,6 +21,7 @@ void Main::start() {
 
 	Screen::getInstance()->init();
 	EventHandler::getInstance()->init();
+
 	linkApps();
 
 	AppManager::getInstance()->addAppToQueue("MainApp");

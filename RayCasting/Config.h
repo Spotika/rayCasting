@@ -83,6 +83,9 @@ namespace config {
 		/// </summary>
 		static auto exit_button = sf::Keyboard::Escape;
 
+		/// <summary>
+		/// Кнопка переключения управления мышью
+		/// </summary>
 		static auto fix_mouse = sf::Keyboard::LControl;
 
 		///// <summary>

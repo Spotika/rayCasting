@@ -7,7 +7,7 @@
 namespace part {
 
 	/// <summary>
-	/// Полигон стен
+	/// Ломаная из стен
 	/// </summary>
 	class WallPolygon : public AbstractLevelPart, public IDrawableOnMinimap {
 	public:

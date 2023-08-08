@@ -23,13 +23,12 @@ void LevelRenderer::render() {
 	for (RayCaster::Intersection* intersection : intersections) {
 
 		float dist = intersection->getDistance();
-
+		dist = dist * std::cos(intersection->ray.orientation - player->getOrientation());
 
 
 		// ограничение прорисовки
 		if (dist < config::render::VIEW_DISTANCE) {
 
-			dist = dist * std::cos(intersection->ray.orientation - player->getOrientation());
 
 			// отрисовка
 			float x = step * intersection->ray.num;
@@ -37,10 +36,8 @@ void LevelRenderer::render() {
 			float y = config::window::height / 2 - height / 2;
 
 
-
 			sf::RectangleShape shape({step, height});
 			shape.setPosition({ x, y });
-
 
 			// работа с цветом
 			uint8_t color = 255 - (int)ceil(255 * (dist / config::render::VIEW_DISTANCE));
@@ -51,7 +48,6 @@ void LevelRenderer::render() {
 		}
 
 		
-
 		// удаление ненужной памяти 
 		delete intersection;
 	};

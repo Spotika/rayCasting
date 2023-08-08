@@ -39,7 +39,6 @@ void MainApp::loop() {
 		// обновление уровня
 		level->update();
 
-		// FIXME
 		// отрисовка уровня
 		renderer->render();
 		// отрисовка миникарты
@@ -47,6 +46,7 @@ void MainApp::loop() {
 
 		// обновление дисплея и событий
 		event_handler->update();
+
 		screen->getRenderWindow()->display();
 		screen->getRenderWindow()->clear(config::color::black);
 	}
