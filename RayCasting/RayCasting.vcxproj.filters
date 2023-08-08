@@ -100,6 +100,9 @@
     <ClCompile Include="WallPolygon.cpp">
       <Filter>Исходные файлы\Уровни\Части\Реализация</Filter>
     </ClCompile>
+    <ClCompile Include="MiniMapController.cpp">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Реализация</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -179,6 +182,12 @@
     </ClInclude>
     <ClInclude Include="IDrawableOnMiniMap.h">
       <Filter>Исходные файлы\Движок</Filter>
+    </ClInclude>
+    <ClInclude Include="IFloatParameterControlled.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры\Интерфейсы</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMapController.h">
+      <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
