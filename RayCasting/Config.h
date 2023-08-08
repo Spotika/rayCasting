@@ -38,7 +38,7 @@ namespace config {
 		/// <summary>
 		/// Базовая скорость игрока
 		/// </summary>
-		static const int BASE_MOVING_SPEED = 100;
+		static const int BASE_MOVING_SPEED = 50;
 		/// <summary>
 		/// Чувствительность поворота камеры
 		/// </summary>
@@ -49,18 +49,18 @@ namespace config {
 
 	namespace render {
 		static const float FOV = std::numbers::pi * 0.6F;
-		static const float VIEW_DISTANCE = 500;
-		static const float RAYS_NUM = 800;
+		static const float VIEW_DISTANCE = 100;
+		static const float RAYS_NUM = 200;
 		/// <summary>
 		/// штука полученная эксперементально
 		/// </summary>
-		static const float MAGIC_CONSTANT = 10000;
+		static const float MAGIC_CONSTANT = 5000;
 	}
 
 	namespace mini_map {
 		static const float RESIZE_SPEED = 0.3f;
 		static const sf::Vector2i POSITION{0, 0};
-		static const sf::Vector2i SIZE{200, 200};
+		static const sf::Vector2i SIZE{300, 300};
 		static int size{ 300 };
 	}
 
