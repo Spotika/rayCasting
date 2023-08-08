@@ -5,6 +5,7 @@
 #include "MiniMap.h"
 #include "LevelRenderer.h"
 #include "Player.h"
+#include "MiniMapController.h"
 #include "PlayerKeyboardController.h"
 #include "Config.h"
 #include<iostream>
@@ -33,7 +34,14 @@ void MainApp::loop() {
 
 	// создание рендера и миникарты
 	LevelRenderer* renderer = new LevelRenderer(level, player);
-	MiniMap* mini_map = new MiniMap(level, {0, 0}, 300, 300);
+	MiniMap* mini_map = new MiniMap(level, config::mini_map::POSITION, config::mini_map::SIZE);
+
+	// подключение контроллера к миникарте
+	MiniMapController* minimap_controller = new MiniMapController(mini_map);
+	level->addController(minimap_controller);
+
+
+	mini_map->setRealativeTraget(player);
 
 	while (true) {
 		// обновление уровня

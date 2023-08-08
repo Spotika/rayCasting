@@ -57,6 +57,13 @@ namespace config {
 		static const float MAGIC_CONSTANT = 10000;
 	}
 
+	namespace mini_map {
+		static const float RESIZE_SPEED = 0.3f;
+		static const sf::Vector2i POSITION{0, 0};
+		static const sf::Vector2i SIZE{300, 300};
+		static int size{ 300 };
+	}
+
 	namespace control_buttons_codes {
 		/// <summary>
 		/// Движение игрока вперед
@@ -87,6 +94,16 @@ namespace config {
 		/// Кнопка переключения управления мышью
 		/// </summary>
 		static auto fix_mouse = sf::Keyboard::LControl;
+
+		/// <summary>
+		/// Увеличение масштаби миникарты
+		/// </summary>
+		static auto minimap_size_increase = sf::Keyboard::Equal;
+
+		/// <summary>
+		/// Уменьшение масштаба миникарты
+		/// </summary>
+		static auto minimap_size_decrease = sf::Keyboard::Hyphen;
 
 		///// <summary>
 		///// Поворот игрока по часовой стрелке
