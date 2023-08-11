@@ -48,13 +48,13 @@ namespace config {
 
 	namespace render {
 		static const float FOV = std::numbers::pi * 0.6F;
-		static const float VIEW_DISTANCE = 100;
+		static const float VIEW_DISTANCE = 200;
 		static const float RAYS_NUM = 400;
-		static const float WALL_DENSITY = 20;
+		static const float WALL_DENSITY = 40;
 		/// <summary>
 		/// штука полученная эксперементально
 		/// </summary>
-		static const float MAGIC_CONSTANT = 200000;
+		static const float MAGIC_CONSTANT = 10000;
 	}
 
 	namespace mini_map {
