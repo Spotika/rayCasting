@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainApp.cpp" />
     <ClCompile Include="AppManager.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="AbstractEntity.h" />
     <ClInclude Include="AbstractController.h" />
+    <ClInclude Include="Functions.h" />
     <ClInclude Include="MiniMapController.h" />
     <ClInclude Include="IFloatParameterControlled.h" />
     <ClInclude Include="IDrawableOnMiniMap.h" />

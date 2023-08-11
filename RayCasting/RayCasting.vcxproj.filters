@@ -56,6 +56,9 @@
     <Filter Include="Исходные файлы\Уровни\Части\Реализация">
       <UniqueIdentifier>{772d0cf2-881c-413e-bae2-125eba85f279}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Вспомогательные классы\Реализация">
+      <UniqueIdentifier>{0bf481b6-860f-4f49-9c5a-7e700035bd6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,6 +105,9 @@
     </ClCompile>
     <ClCompile Include="MiniMapController.cpp">
       <Filter>Исходные файлы\Сущности\Контроллеры\Реализация</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Исходные файлы\Вспомогательные классы\Реализация</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +194,9 @@
     </ClInclude>
     <ClInclude Include="MiniMapController.h">
       <Filter>Исходные файлы\Сущности\Контроллеры</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Исходные файлы\Вспомогательные классы</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

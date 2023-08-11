@@ -56,7 +56,7 @@ void MainApp::loop() {
 		// обновление дисплея и событий
 		event_handler->update();
 
-		std::cout << 1 / event_handler->getTimeElapsed() << "\n";
+		//std::cout << 1 / event_handler->getTimeElapsed() << "\n";
 
 		screen->getRenderWindow()->display();
 		screen->getRenderWindow()->clear(config::color::black);

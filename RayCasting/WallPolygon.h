@@ -11,6 +11,12 @@ namespace part {
 	/// </summary>
 	class WallPolygon : public AbstractLevelPart, public IDrawableOnMinimap {
 	public:
+		/// <summary>
+		/// Длина стены
+		/// </summary>
+		float length;
+		std::vector<float> dist_before_point;
+
 		std::vector<sf::Vertex> points;
 
 		WallPolygon(std::vector<sf::Vector2f> points);

@@ -3,6 +3,7 @@
 #include "RayCaster.h"
 #include "Screen.h"
 #include "Config.h"
+#include "EventHandler.h"
 
 
 LevelRenderer::LevelRenderer(AbstractLevel* level, Player* player) : level{ level }, player{ player } {
@@ -29,7 +30,8 @@ void LevelRenderer::render() {
 	sky.setFillColor(config::game::SKY_COLOR);
 	window->draw(sky);
 
-	// отрисовка стен
+	// отрисовка стен 
+	// TODO: сделать загрузку текстуры 1 раз
 	float step = config::window::width / config::render::RAYS_NUM;
 	sf::Texture wall_texture;
 	if (!wall_texture.loadFromFile(config::textures::WALL)) {
@@ -47,17 +49,19 @@ void LevelRenderer::render() {
 		// ограничение прорисовки
 		if (dist < config::render::VIEW_DISTANCE) {
 
-
 			// отрисовка
 			float x = step * intersection->ray.num;
 			float height = config::render::MAGIC_CONSTANT / dist;
 			float y = config::window::height / 2 - height / 2;
-
-
+			
+			
+			int textureIndex = (int)(intersection->part_of_object * config::render::WALL_DENSITY) % (wall_texture.getSize().x); // FIXME
+			// стена с текстурой
 			sf::RectangleShape shape({step, height});
-			shape.setTextureRect(sf::IntRect((int)ceil(step) * intersection->ray.num % wall_texture.getSize().x, 0, (int)ceil(step), wall_texture.getSize().y));
+			shape.setTextureRect(sf::IntRect(textureIndex,
+				0, 1, wall_texture.getSize().y));
 			shape.setTexture(&wall_texture);
-			shape.setPosition({ x, y });
+			shape.setPosition({ x, std::min(y, (float)config::window::height - 1) });
 
 			// работа с цветом
 			sf::Color color = config::game::WALL_COLOR;

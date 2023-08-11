@@ -49,11 +49,12 @@ namespace config {
 	namespace render {
 		static const float FOV = std::numbers::pi * 0.6F;
 		static const float VIEW_DISTANCE = 100;
-		static const float RAYS_NUM = 200;
+		static const float RAYS_NUM = 400;
+		static const float WALL_DENSITY = 20;
 		/// <summary>
 		/// штука полученная эксперементально
 		/// </summary>
-		static const float MAGIC_CONSTANT = 5000;
+		static const float MAGIC_CONSTANT = 200000;
 	}
 
 	namespace mini_map {
@@ -124,4 +125,5 @@ namespace config {
 	namespace textures {
 		static const std::string WALL = "textures/wall.jpg";
 	}
+
 }

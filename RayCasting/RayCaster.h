@@ -34,13 +34,18 @@ public:
 	public:
 		Ray ray;
 		sf::Vector2f position;
+		/// <summary>
+		/// часть от начала на которую делит точка пересечени€ объект
+		/// </summary>
+		float part_of_object;
 
 		/// <summary>
 		/// 
 		/// </summary>
 		/// <returns>¬озвращает дистанцию между точкой пересечени€ и началом луча</returns>
 		float getDistance() const;
-		Intersection(Ray ray, const sf::Vector2f& position) : ray(ray), position(position) {};
+
+		Intersection(Ray ray, const sf::Vector2f& position) : ray(ray), position(position), part_of_object(0) {};
 
 		~Intersection() {}
 	};
